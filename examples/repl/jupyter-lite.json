@@ -1,0 +1,18 @@
+{
+  "jupyter-config-data": {
+    "contentsStorageDrivers": [
+      "memoryStorageDriver"
+    ],
+    "disabledExtensions": [
+      "jupyterlab-kernel-spy",
+      "jupyterlab-tour"
+    ],
+    "enableMemoryStorage": true,
+    "settingsStorageDrivers": [
+      "memoryStorageDriver"
+    ],
+    "settingsUrl": "../build/schemas",
+    "themesUrl": "./build/themes"
+  },
+  "jupyter-lite-schema-version": 0
+}
