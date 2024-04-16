@@ -12,6 +12,13 @@
         "liteExtension": true,
         "load": "static/remoteEntry.5005680d014e4b7f3db1.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.7d90e427fb1d7431c630.js",
+        "name": "pretzelai",
+        "style": "./style"
       }
     ],
     "fileTypes": {
