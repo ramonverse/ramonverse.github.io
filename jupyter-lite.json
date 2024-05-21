@@ -23,8 +23,8 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.30ec89fe7ecebaa7f51c.js",
-        "name": "pretzelai",
+        "load": "static/remoteEntry.504ecff401cca8dec10c.js",
+        "name": "pnewext",
         "style": "./style"
       }
     ],
