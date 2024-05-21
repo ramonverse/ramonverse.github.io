@@ -1,17 +1,14 @@
 {
-  "title": "Pretzel AI Settings",
-  "description": "Configure the settings for Pretzel: The AI extension for JupyterLab. Select the AI service you want to use (OpenAI API key, Use Pretzel AI Server or Use Azure API). Then, provide the necessary API keys and URLs based on the AI service you choose to use.",
+  "jupyter.lab.shortcuts": [],
+  "title": "pnewext",
+  "description": "pnewext settings.",
   "type": "object",
   "properties": {
     "aiService": {
       "type": "string",
       "title": "AI Service",
       "description": "Select the AI service to use for AI operations.",
-      "enum": [
-        "OpenAI API key",
-        "Use Pretzel AI Server",
-        "Use Azure API"
-      ],
+      "enum": ["OpenAI API key", "Use Pretzel AI Server", "Use Azure API"],
       "default": "Use Pretzel AI Server"
     },
     "openAiSettings": {

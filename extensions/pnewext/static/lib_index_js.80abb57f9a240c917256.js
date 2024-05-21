@@ -345,8 +345,10 @@ const extension = {
                 })();
             });
             await Promise.allSettled(promises);
-            const oldSet = new Set((embeddings).map(e => e.hash));
-            const newSet = new Set((newEmbeddingsArray).map(e => e.hash));
+            console.log(embeddings);
+            console.log(aiService);
+            const oldSet = new Set(embeddings.map(e => e.hash));
+            const newSet = new Set(newEmbeddingsArray.map(e => e.hash));
             if (!(0,_utils__WEBPACK_IMPORTED_MODULE_9__.isSetsEqual)(oldSet, newSet)) {
                 app.serviceManager.contents.save(path, {
                     type: 'file',
@@ -1233,4 +1235,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.e9ee22bd40acafafc137.js.map
+//# sourceMappingURL=lib_index_js.80abb57f9a240c917256.js.map
