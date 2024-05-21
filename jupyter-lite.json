@@ -16,8 +16,8 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.7d90e427fb1d7431c630.js",
-        "name": "pretzelai",
+        "load": "static/remoteEntry.5cbb9d2323598fbda535.js",
+        "name": "jupyterlab_pygments",
         "style": "./style"
       }
     ],
