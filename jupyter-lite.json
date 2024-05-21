@@ -19,6 +19,13 @@
         "load": "static/remoteEntry.5cbb9d2323598fbda535.js",
         "name": "jupyterlab_pygments",
         "style": "./style"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.30ec89fe7ecebaa7f51c.js",
+        "name": "pretzelai",
+        "style": "./style"
       }
     ],
     "fileTypes": {
