@@ -305,8 +305,10 @@ const extension = {
             const promises = cells.map(cell => {
                 return (async () => {
                     const index = embeddings.findIndex(e => e.id === cell.id);
+                    console.log('🚀 ~ return ~ index:', index);
                     if (index !== -1) {
                         const hash = await (0,_utils__WEBPACK_IMPORTED_MODULE_9__.calculateHash)(cell.source);
+                        console.log('🚀 ~ return ~ hash:', hash);
                         if (hash !== embeddings[index].hash) {
                             try {
                                 const response = await (0,_prompt__WEBPACK_IMPORTED_MODULE_8__.openaiEmbeddings)(cell.source, aiService, aiClient);
@@ -1233,4 +1235,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.9d72ef062e101c54f35c.js.map
+//# sourceMappingURL=lib_index_js.a616479e0d93314cb8fc.js.map
