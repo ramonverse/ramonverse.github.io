@@ -302,9 +302,7 @@ const extension = {
         async function createEmbeddings(embeddingsJSON, cells, path) {
             embeddings = embeddingsJSON;
             const newEmbeddingsArray = [];
-            const promises = cells
-                .filter(cell => cell.source.trim() !== '') // Filter out empty cells
-                .map(cell => {
+            const promises = cells.map(cell => {
                 return (async () => {
                     const index = embeddings.findIndex(e => e.id === cell.id);
                     if (index !== -1) {
@@ -1235,4 +1233,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.80abb57f9a240c917256.js.map
+//# sourceMappingURL=lib_index_js.b8d3a5957c36b7948ef4.js.map
