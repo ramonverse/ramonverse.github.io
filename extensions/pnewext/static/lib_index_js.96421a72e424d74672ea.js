@@ -302,6 +302,7 @@ const extension = {
         async function createEmbeddings(embeddingsJSON, cells, path) {
             embeddings = embeddingsJSON;
             const newEmbeddingsArray = [];
+            console.log('🚀 ~ promises ~ cells:', cells);
             const promises = cells.map(cell => {
                 return (async () => {
                     const index = embeddings.findIndex(e => e.id === cell.id);
@@ -369,6 +370,7 @@ const extension = {
                     console.log('🚀 ~ return ~ file:', file);
                     try {
                         const embJSON = JSON.parse(file.content);
+                        console.log(notebook);
                         createEmbeddings(embJSON, notebook.model.sharedModel.cells, embeddingsPath);
                     }
                     catch (error) {
@@ -1237,4 +1239,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.1e5058795dc089ab2247.js.map
+//# sourceMappingURL=lib_index_js.96421a72e424d74672ea.js.map
