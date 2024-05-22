@@ -366,6 +366,7 @@ const extension = {
                 app.serviceManager.contents
                     .get(embeddingsPath)
                     .then(file => {
+                    console.log('🚀 ~ return ~ file:', file);
                     try {
                         const embJSON = JSON.parse(file.content);
                         createEmbeddings(embJSON, notebook.model.sharedModel.cells, embeddingsPath);
@@ -375,6 +376,7 @@ const extension = {
                     }
                 })
                     .catch(async (error) => {
+                    console.log('🚀 ~ return ~ error:', error);
                     app.serviceManager.contents.save(embeddingsPath, {
                         type: 'file',
                         format: 'text',
@@ -1235,4 +1237,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.a616479e0d93314cb8fc.js.map
+//# sourceMappingURL=lib_index_js.1e5058795dc089ab2247.js.map
