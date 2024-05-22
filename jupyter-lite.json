@@ -23,7 +23,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.22e601eff3278981bc7a.js",
+        "load": "static/remoteEntry.50f9af0efd651e55e194.js",
         "name": "pnewext",
         "style": "./style"
       }

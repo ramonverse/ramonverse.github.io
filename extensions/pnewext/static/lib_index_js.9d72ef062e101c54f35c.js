@@ -345,7 +345,7 @@ const extension = {
             await Promise.allSettled(promises);
             console.log(embeddings);
             console.log(aiService);
-            const oldSet = new Set(embeddings.map(e => e.hash));
+            const oldSet = new Set((embeddings || []).map(e => e.hash));
             const newSet = new Set(newEmbeddingsArray.map(e => e.hash));
             if (!(0,_utils__WEBPACK_IMPORTED_MODULE_9__.isSetsEqual)(oldSet, newSet)) {
                 app.serviceManager.contents.save(path, {
@@ -1233,4 +1233,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.b8d3a5957c36b7948ef4.js.map
+//# sourceMappingURL=lib_index_js.9d72ef062e101c54f35c.js.map
