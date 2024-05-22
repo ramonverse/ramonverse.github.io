@@ -303,7 +303,12 @@ const extension = {
             embeddings = embeddingsJSON;
             const newEmbeddingsArray = [];
             console.log('🚀 ~ promises ~ cells:', cells);
+            cells.forEach(cell => {
+                console.log('Cell ID:', cell.id);
+            });
             const promises = cells.map(cell => {
+                const index = embeddings.findIndex(e => e.id === cell.id);
+                console.log('🚀 ~ return ~ index:', index);
                 return (async () => {
                     const index = embeddings.findIndex(e => e.id === cell.id);
                     console.log('🚀 ~ return ~ index:', index);
@@ -1239,4 +1244,4 @@ const renderEditor = (gen, parentContainer, diffEditorContainer, diffEditor, mon
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.96421a72e424d74672ea.js.map
+//# sourceMappingURL=lib_index_js.1dab269e64f2b3b45617.js.map

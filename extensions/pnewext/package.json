@@ -103,7 +103,7 @@
     "outputDir": "pnewext/labextension",
     "schemaDir": "schema",
     "_build": {
-      "load": "static/remoteEntry.c1654c7ffdd5b3590455.js",
+      "load": "static/remoteEntry.30e579c5436c6539c57e.js",
       "extension": "./extension",
       "style": "./style"
     }
